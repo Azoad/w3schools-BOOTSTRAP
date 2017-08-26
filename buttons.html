@@ -10,17 +10,170 @@
 </head>
 <body>
 
-<div class="container">
-  <h2>Button Styles</h2>
-  <button type="button" class="btn">Basic</button>
-  <button type="button" class="btn btn-default">Default</button>
-  <button type="button" class="btn btn-primary">Primary</button>
-  <button type="button" class="btn btn-success">Success</button>
-  <button type="button" class="btn btn-info">Info</button>
-  <button type="button" class="btn btn-warning">Warning</button>
-  <button type="button" class="btn btn-danger">Danger</button>
-  <button type="button" class="btn btn-link">Link</button>      
-</div>
+  <div class="container">
+    <h2>Button Styles</h2>
+    <button type="button" class="btn">Basic</button>
+    <button type="button" class="btn btn-default">Default</button>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-link">Link</button>      
+  </div>
+
+  <div class="container">
+    <h2>Button Tags</h2>
+    <a href="#" class="btn btn-info" role="button">Link Button</a>
+    <button type="button" class="btn btn-info">Button</button>
+    <input type="button" class="btn btn-info" value="Input Button">
+    <input type="submit" class="btn btn-info" value="Submit Button">
+  </div>
+
+  <div class="container">
+    <h2>Button Sizes</h2>
+    <button type="button" class="btn btn-primary btn-lg">Large</button>
+    <button type="button" class="btn btn-primary btn-md">Medium</button>
+    <button type="button" class="btn btn-primary btn-sm">Small</button>
+    <button type="button" class="btn btn-primary btn-xs">XSmall</button>
+  </div>
+
+  <div class="container">  
+    <h2>Block Level Buttons</h2>
+    <button type="button" class="btn btn-primary btn-block">Button 1</button>
+    <button type="button" class="btn btn-default btn-block">Button 2</button>
+    <h2>Large Block Level Buttons</h2>
+    <button type="button" class="btn btn-primary btn-lg btn-block">Button 1</button>
+    <button type="button" class="btn btn-default btn-lg btn-block">Button 2</button>
+    <h2>Small Block Level Buttons</h2>
+    <button type="button" class="btn btn-primary btn-sm btn-block">Button 1</button>
+    <button type="button" class="btn btn-default btn-sm btn-block">Button 2</button>
+  </div>
+
+  <div class="container">
+    <h2>Button States</h2>
+    <button type="button" class="btn btn-primary">Primary Button</button>
+    <button type="button" class="btn btn-primary active">Active Primary</button>
+    <button type="button" class="btn btn-primary disabled">Disabled Primary</button>
+  </div>
+
+  <br><br><br>
+
+  <div class="container">
+    <h2>Button Group</h2>
+    <p>The <code>.btn-group</code> class creates a button group.</p>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary">Apple</button>
+      <button type="button" class="btn btn-primary">Samsung</button>
+      <button type="button" class="btn btn-primary">Sony</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Button Groups - Set Sizes</h2>
+    <p>The class <code>.btn-group-*</code> change size of all buttons in a button group.</p>
+    <h3>Large Buttons</h3>
+    <div class="btn-group btn-group-lg">
+      <button type="button" class="btn btn-primary">Apple</button>
+      <button type="button" class="btn btn-primary">Samsung</button>
+      <button type="button" class="btn btn-primary">Sony</button>
+    </div>
+    <h3>Default Buttons</h3>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary">Apple</button>
+      <button type="button" class="btn btn-primary">Samsung</button>
+      <button type="button" class="btn btn-primary">Sony</button>
+    </div>
+    <h3>Small Buttons</h3>
+    <div class="btn-group btn-group-sm">
+      <button type="button" class="btn btn-primary">Apple</button>
+      <button type="button" class="btn btn-primary">Samsung</button>
+      <button type="button" class="btn btn-primary">Sony</button>
+    </div>
+    <h3>Extra Small Buttons</h3>
+    <div class="btn-group btn-group-xs">
+      <button type="button" class="btn btn-primary">Apple</button>
+      <button type="button" class="btn btn-primary">Samsung</button>
+      <button type="button" class="btn btn-primary">Sony</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Vertical Button Group</h2>
+    <p>The <code>.btn-group-vertical</code> class creates a button group.</p>
+    <div class="btn-group-vertical">
+      <button type="button" class="btn btn-primary">Apple</button>
+      <button type="button" class="btn btn-primary">Samsung</button>
+      <button type="button" class="btn btn-primary">Sony</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Justified Button Groups</h2>
+    <p>To span the entire width of the screen, use the <code>.btn-group-justified</code> class.With <code>&lt;a&gt;</code> elements.</p>
+    <div class="btn-group btn-group-justified">
+      <a href="#" class="btn btn-primary">Apple</a>
+      <a href="#" class="btn btn-primary">Samsung</a>
+      <a href="#" class="btn btn-primary">Sony</a>
+    </div>
+    <br>
+    <p>Using<code>&lt;button&gt;</code> elements, you must wrap each button in a <code>.btn-group</code> class</p>
+    <div class="btn-group btn-group-justified">
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary">Apple</button>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary">Samsung</button>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary">Sony</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Nesting Button Groups</h2>
+    <p>Nest button groups to create drop down menus:</p>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary">Apple</button>
+      <button type="button" class="btn btn-primary">Samsung</button>
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+          Sony <span class="caret"></span></button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Tablet</a></li>
+            <li><a href="#">Smartphone</a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>DropUp</h2>
+    <div class="dropup">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+        Sony <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Tablet</a></li>
+          <li><a href="#">Smartphone</a></li>
+        </ul>
+    </div>
+  </div>  
+
+  <div class="container">
+    <h2>Split Buttons</h2>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary">Sony</button>
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu">
+        <!--can add menu--> 
+        <li><a href="#">Tablet</a></li>
+        <li><a href="#">Smartphone</a></li>
+      </ul>
+    </div>
+  </div>
 
 </body>
 </html>
