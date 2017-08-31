@@ -1,0 +1,240 @@
+<!-- Comment all the dropdown except the one you want to see -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap JS Dropdown</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>alert('Comment all the dropdown except the one you want to see if you want to understand properly');</script>
+    <style>
+  /* Style to reverse the caret icon from pointing downwards to upwards */
+  .caret.caret-up {
+    border-top-width: 0;
+    border-bottom: 4px solid #fff;
+  }
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+</style>
+</head>
+<body>
+<h1 class="alert alert-danger">Please, Comment all the dropdown except the one you want to see if you want to understand properly.</h1>
+<!-- Well as all the js have same variable and method they all get changed clicking on one . sorry :( -->
+<!--
+<div class="container">
+  <h2>Dropdown Using JS</h2>
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Dropdown Example
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+      <li role="presentation" class="divider"></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>    
+    </ul>
+  </div><br>
+  <p><strong>Note:</strong> The <code>data-toggle="dropdown"</code> attribute is required regardless of whether you call the dropdown() method.</p>
+</div>
+
+<script>
+$(document).ready(function(){
+    $(".dropdown-toggle").dropdown();
+});
+</script>
+
+<div class="container">
+  <h2>Dropdown Toggle</h2>
+  <p>The <strong>toggle</strong> method toggles the dropdown.</p>
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Dropdown Example
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+      <li role="presentation" class="divider"></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>    
+    </ul>
+  </div><br>
+  <p><strong>Note:</strong> For dropdowns, you should always include the data-toggle="dropdown" attribute. Do not rely solely on the toggle method, as it may not work as expected in all browsers.</p>
+</div>
+
+<script>
+$(document).ready(function(){
+    $(".dropdown-toggle").dropdown("toggle");
+});
+</script>
+
+<div class="container">
+  <h2>Dropdown Events</h2>
+  <p>The <strong>show.bs.dropdown</strong> event occurs when the dropdown is about to be shown.</p>
+  <p>The <strong>shown.bs.dropdown</strong> event occurs when the dropdown is fully shown.</p>
+  <p>The <strong>hide.bs.dropdown</strong> event occurs when the dropdown is about to be hidden.</p>
+  <p>The <strong>hidden.bs.dropdown</strong> event occurs when the dropdown is fully hidden.</p>
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Toggle this Dropdown
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+      <li role="presentation" class="divider"></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>    
+    </ul>
+  </div><br>
+  <p><strong>Note:</strong> For dropdowns, you should always include the data-toggle="dropdown" attribute. Do not rely solely on the toggle method, as it may not work as expected in all browsers.</p>
+</div>
+
+<script>
+$(document).ready(function(){
+    $('.dropdown').on('show.bs.dropdown', function(){
+        alert('The dropdown is about to be shown.');
+    });
+    $('.dropdown').on('shown.bs.dropdown', function(){
+        alert('The dropdown is now fully shown.');
+    });
+    $('.dropdown').on('hide.bs.dropdown', function(e){
+        alert('The dropdown is about to be hidden.');
+    });
+    $('.dropdown').on('hidden.bs.dropdown', function(){
+        alert('The dropdown is now fully hidden.');
+    });
+});
+</script>
+
+<div class="container">
+  <h2>Dropdown Event Related Target</h2>
+  <p>Click on the Dropdown button below. <strong>event.relatedTarget</strong> returns the element which triggered the dropdown.</p>
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Dropdown Example
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+      <li role="presentation" class="divider"></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>    
+    </ul>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+    $(".dropdown").on("show.bs.dropdown", function(event){
+        var x = $(event.relatedTarget).text(); // Get the button text
+        alert("You clicked on: " + x);
+    });
+});
+</script>
+
+<div class="container">
+  <h2>Change the caret symbol on dropdown</h2>                                       
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+    </ul>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+  $(".dropdown").on("hide.bs.dropdown", function(){
+    $(".btn").html('Dropdown <span class="caret"></span>');
+  });
+  $(".dropdown").on("show.bs.dropdown", function(){
+    $(".btn").html('Dropdown <span class="caret caret-up"></span>');
+  });
+});
+</script>
+
+<div class="container">
+  <h2>Multi-Level Dropdowns</h2>
+  <p>In this example, we use jQuery to open multi-level dropdowns on click (see script section below).</p>                             
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a tabindex="-1" href="#">HTML</a></li>
+      <li><a tabindex="-1" href="#">CSS</a></li>
+      <li>
+        <a class="test" tabindex="-1" href="#">New dropdown <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+          <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+          <li>
+            <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">3rd level dropdown</a></li>
+              <li><a href="#">3rd level dropdown</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+  $('.dropdown a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>
+
+<div class="container">
+  <h2>Multi-Level Dropdowns</h2>
+  <p>In this example, we have created a .dropdown-submenu class for multi-level dropdowns (see style section above).</p>
+  <p>Note that we have added jQuery to open the multi-level dropdown on click (see script section below).</p>                                        
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a tabindex="-1" href="#">HTML</a></li>
+      <li><a tabindex="-1" href="#">CSS</a></li>
+      <li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="#">New dropdown <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+          <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+          <li class="dropdown-submenu">
+            <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">3rd level dropdown</a></li>
+              <li><a href="#">3rd level dropdown</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>
+-->  
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Dropdown</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Dropdowns</h2>
+    <p>The <code>.dropdown</code> class is used to indicate a dropdown menu.</p>
+    <p>Use the <code>.dropdown-menu</code> class to actually build the dropdown menu.</p>
+    <p>To open the dropdown menu, use a button or a link with a class of <code>.dropdown-toggle</code> and <code>data-toggle="dropdown"</code>.</p>                                          
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+        <span class="caret"> 
+        </span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Explanation</h2>
+    <p>The <code>.dropdown</code> class indicates a dropdown menu.</p>
+    <p>To open dropdown menu, use a button or a link with s class of <code>.dropdown-toggle</code> and the <code>data-toggle="dropdown&quot;</code> attribute.</p>
+    <p>The <code>.caret</code> class creates a caret arrow icon (<span class="caret"></span>), which indicates that the button is a dropdown.</p>
+    <p>Add the <code>.dropdown-menu</code> clas to a &lt;ul&gt; element to actually build the dropdown menu.</p>
+  </div>
+
+  <div class="container">
+    <h2>Dropdown Divider</h2>
+    <p>The <code>.divider</code> class is used to separate links inside the dropdown menu with a thin horizontal line</p>
+    <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
+        <span class="caret">
+        </span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li class="divider"></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Dropdown Header</h2>
+    <p>The <code>.dropdown-header</code> class is used to add headers inside the dropdown menu</p>
+    <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li class="dropdown-header">Dropdown header 1</li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li class="divider"></li>
+        <li class="dropdown-header">Dropdown header 2</li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Dropdown Active-Disabled</h2>
+    <p>The <code>.active</code> class adds a blue background color to the active link.</p>
+    <p>The <code>.disabled</code> class disables a dropdown item (grey text color).</p>
+    <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Normal</a></li>
+        <li class="disabled"><a href="#">Disabled</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li><a href="#">Normal</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container">
+  <h2>Dropdown Position</h2>
+  <p>Add the <code>.dropdown-menu-right</code> class to <code>.dropdown-menu</code> to right-align the dropdown menu</p>
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu dropdown-menu-right">
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+      <li class="divider"></li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="container">
+  <h2>Dropup</h2>
+  <p>The <code>.dropup</code> class makes the dropdown menu expand upwards instead of downwards</p>
+  <div class="dropup">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Dropup Example
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+      <li class="divider"></li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="container">
+  <h2>Dropdown Accessibility</h2>
+  <p>To help improve accessibility for people using screen readers, you should include the following <code>role</code> and <code>aria-*</code> attributes, when creating a dropdown menu</p>                       
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tutorials
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+      <li role="presentation" class="divider"></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
+    </ul>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Page 1-1</a></li>
+          <li><a href="#">Page 1-2</a></li>
+          <li><a href="#">Page 1-3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
+  </div>
+</nav>
+  
+<div class="container">
+  <h3>Navbar With Dropdown</h3>
+  <p>This example adds a dropdown menu for the "Page 1" button in the navigation bar.</p>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Page 1</a></li>
+        <li><a href="#">Page 2</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Login <span class="glyphicon glyphicon-log-in"></span></a>
+          <div class="dropdown-menu">
+            <form id="formLogin" class="form container-fluid">
+              <div class="form-group">
+                <label for="usr">Name:</label>
+                <input type="text" class="form-control" id="usr">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd">
+              </div>
+              <button type="button" id="btnLogin" class="btn btn-block">Login</button>
+            </form>
+            <div class="container-fluid">
+              <br>
+              <a class="small" href="#">Forgot password?</a>
+            </div> 
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container">
+  <h3>Navbar With Dropdown</h3>
+  <p>This example adds a dropdown menu for the "Login" button in the navigation bar.</p>
+</div>
+
+</body>
+</html>

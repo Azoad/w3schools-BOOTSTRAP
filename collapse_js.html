@@ -1,0 +1,133 @@
+<!-- Comment all the collapse except the one you want to see -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>alert('Comment all the collapsible except the one you want to see if you want to understand properly');</script>
+  <style>
+  /* Icon when the collapsible content is shown */
+  .btn:after {
+    font-family: "Glyphicons Halflings";
+    content: "\e114";
+    float: right;
+    margin-left: 15px;
+  }
+  /* Icon when the collapsible content is hidden */
+  .btn.collapsed:after {
+    content: "\e080";
+  }
+</style>
+</head>
+<body>
+<h1 class="alert alert-danger">Please, Comment all the collapsible except the one you want to see if you want to understand properly.</h1>
+<!--
+<div class="container">
+  <h2>Collapsible Methods</h2>
+  <p>The toggle method toggles the collapsible content.</p>
+  <p>The show method shows the collapsible content.</p>
+  <p>The hide method hides the collapsible content.</p>
+  <button type="button" class="btn btn-primary">Toggle</button>
+  <button type="button" class="btn btn-success">Show</button>
+  <button type="button" class="btn btn-warning">Hide</button> 
+    
+  <div class="collapse">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+    $(".btn-primary").click(function(){
+        $(".collapse").collapse('toggle');
+    });
+    $(".btn-success").click(function(){
+        $(".collapse").collapse('show');
+    });
+    $(".btn-warning").click(function(){
+        $(".collapse").collapse('hide');
+    });
+});
+</script>
+
+<div class="container">
+  <h2>Collapse Events</h2>
+  <p>The toggle method toggles the collapsible content.</p>
+  <p>The show method shows the collapsible content.</p>
+  <p>The hide method hides the collapsible content.</p>
+  <button type="button" class="btn btn-primary">Toggle</button>
+  <button type="button" class="btn btn-success">Show</button>
+  <button type="button" class="btn btn-warning">Hide</button> 
+    
+  <div class="collapse">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+    $(".btn-primary").click(function(){
+        $(".collapse").collapse('toggle');
+    });
+    $(".btn-success").click(function(){
+        $(".collapse").collapse('show');
+    });
+    $(".btn-warning").click(function(){
+        $(".collapse").collapse('hide');
+    });
+    $(".collapse").on('show.bs.collapse', function(){
+        alert('The collapsible content is about to be shown.');
+    });
+    $(".collapse").on('shown.bs.collapse', function(){
+        alert('The collapsible content is now fully shown.');
+    });
+    $(".collapse").on('hide.bs.collapse', function(){
+        alert('The collapsible content is about to be hidden.');
+    });
+    $(".collapse").on('hidden.bs.collapse', function(){
+        alert('The collapsible content is now hidden.');
+    });
+});
+</script>
+
+<div class="container">
+  <h2>Expand and Collapse with different icons</h2>
+    <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#demo">
+      <span class="glyphicon glyphicon-collapse-down"></span> Open
+    </button>
+  <div id="demo" class="collapse">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+  $("#demo").on("hide.bs.collapse", function(){
+    $(".btn").html('<span class="glyphicon glyphicon-collapse-down"></span> Open');
+  });
+  $("#demo").on("show.bs.collapse", function(){
+    $(".btn").html('<span class="glyphicon glyphicon-collapse-up"></span> Close');
+  });
+});
+</script>
+
+<div class="container">
+  <h2>Simple Collapsible</h2>
+  <button type="button" class="btn btn-lg btn-info collapsed" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
+  <div id="demo" class="collapse">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+</div>
+-->
+</body>
+</html>
